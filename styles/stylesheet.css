@@ -22,7 +22,7 @@ h1{
   font-size: 50px;
   font-style: italic;
   font-weight: bold;
-  font-family: monospace;
+  font-family: 'Spicy Rice', cursive;
 }
 body{
    background-color: lightgray;
@@ -40,12 +40,21 @@ p{
   font-family: Helvetica;
 }
 li{
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 50px;
-  width: 150px;
-  font-size: 20px;
+  width: 200px;
+  font-size: 30px;
   text-align: center;
   list-style-position: inside;
   border: 2px solid purple;
   background-color: gold;
+  font-family: 'Poor Story', cursive;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+
 }
