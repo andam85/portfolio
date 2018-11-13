@@ -1,4 +1,5 @@
 /*Css Comments look like this */
+@import url('https://fonts.googleapis.com/css?family=Acme|Indie+Flower|Pacifico');
 * {
   box-sizing: border-box;
 }
@@ -39,18 +40,45 @@ p{
   font-style: oblique;
   font-family: Helvetica;
 }
+a {
+    text-decoration : none;
+  }
+ul li:nth-child(odd){
+  font-family: 'Indie Flower', cursive;
+  background-color: #4285F4;
+}
+ul li:nth-child(2n){
+  font-family: 'Pacifico', cursive;
+  background-color: #DB4437;
+}
+ul li:last-of-type{
+  font-family: 'Acme', sans-serif;
+  background-color: #0F9D58;
+}
+
+a:visited{
+color: white;
+}
+
 li{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 50px;
-  width: 200px;
-  font-size: 30px;
+  transition-property: opacity;
+  transition-duration: 3s;
+  transition-delay: .02s;
+  opacity: .20;
+  height: 100px;
+  width: 300px;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
   text-align: center;
   list-style-position: inside;
-  border: 2px solid purple;
-  background-color: gold;
-  font-family: 'Poor Story', cursive;
+}
+
+li:hover{
+  opacity: 1;
 }
 
 .flex-container{
